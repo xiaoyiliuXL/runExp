@@ -1,4 +1,21 @@
 function Params = initEyelink(Params)
+% ----------------------------------------------------------------------
+% Params = initEyelink(Params)
+% ----------------------------------------------------------------------
+% Goal of the function :
+% Initiate eyelink settings
+% ----------------------------------------------------------------------
+% Input(s) :
+% Params
+% ----------------------------------------------------------------------
+% Output(s):
+% none
+% ----------------------------------------------------------------------
+% Function created by Xiaoyi LIU (xiaoyi.x.liu@gmail.com)
+% Last update : July 2021
+% Project :     Eyelink toolbox
+% Version :     1.0
+% ----------------------------------------------------------------------
 
     if Params.exp.useET
 

@@ -1,7 +1,25 @@
-function EyelinkEnterSetup(el)
-% EyelinkEnterSetup(el)
+function EyelinkEnterSetup(Params)
+% ----------------------------------------------------------------------
+% EyelinkEnterSetup(Params)
+% ----------------------------------------------------------------------
+% Goal of the function :
+% Enter EyeLink setup
+% ----------------------------------------------------------------------
+% Input(s) :
+% Params
+% ----------------------------------------------------------------------
+% Output(s):
+% none
+% ----------------------------------------------------------------------
+% Function created by Xiaoyi LIU (xiaoyi.x.liu@gmail.com)
+% Last update : July 2021
+% Project :     Eyelink toolbox
+% Version :     1.0
+% ----------------------------------------------------------------------
 
 fprintf('\n\nCamera setup started (%.4f)...\n', GetSecs());
+
+el = Params.el;
 
 elsetupresult = true;
 while elsetupresult

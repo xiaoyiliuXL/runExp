@@ -11,3 +11,5 @@ function rad = deg2rad(deg)
 % http://blogs.mathworks.com/pick/2009/11/27/degrees-and-radians/
 
 rad = (pi/180).*deg;
+
+end

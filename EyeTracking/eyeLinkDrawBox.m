@@ -27,9 +27,9 @@ function eyeLinkDrawBox(x,y,sizeX,sizeY,ELflag,colorFrm,colorFill)
 
 if ELflag == 1 % framed box
     Eyelink('Command','draw_box %d %d %d %d %d',round(x-sizeX/2), round(y-sizeY/2), round(x+sizeX/2), round(y+sizeY/2),colorFrm);
-elseif ELflag == 2
+elseif ELflag == 2 % filled box
     Eyelink('Command','draw_filled_box %d %d %d %d %d',round(x-sizeX/2), round(y-sizeY/2), round(x+sizeX/2), round(y+sizeY/2),colorFill);
-elseif ELflag == 3
+elseif ELflag == 3 % fill + frame
     Eyelink('Command','draw_filled_box %d %d %d %d %d',round(x-sizeX/2), round(y-sizeY/2), round(x+sizeX/2), round(y+sizeY/2),colorFill);
     Eyelink('Command','draw_box %d %d %d %d %d',round(x-sizeX/2), round(y-sizeY/2), round(x+sizeX/2), round(y+sizeY/2),colorFrm);
 end

@@ -4,3 +4,5 @@ function output = scaleImg(input)
 
 [minval,maxval] = MatMinMax(input);
 output = (input - minval) ./ (maxval-minval);
+
+end

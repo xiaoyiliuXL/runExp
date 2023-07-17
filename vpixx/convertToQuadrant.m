@@ -1,5 +1,24 @@
 function [x,y] = convertToQuadrant(position, displaySize, quad)
-%This scales an x, y position into a specific quadrant of the screen    
+% ----------------------------------------------------------------------
+% [x,y] = convertToQuadrant(position, displaySize, quad)
+% ----------------------------------------------------------------------
+% Goal of the function :
+% Scale an x,y position into a specific quadrant of the screen
+% ----------------------------------------------------------------------
+% Input(s) :
+% position: [x, y] locaiton of the stimulus
+% displaySize: size of the display
+% quad: 1-top left; 2-top right; 3-bottom left; 4-bottom-right
+% ----------------------------------------------------------------------
+% Output(s):
+% x, y: position of the new sitmulus in the quadrant
+% ----------------------------------------------------------------------
+% Function created by ?
+% Last update : July 2021
+% Project :     vpixx
+% Version :     1.0
+% ----------------------------------------------------------------------
+
 scale = 0.5;
 
 switch quad
